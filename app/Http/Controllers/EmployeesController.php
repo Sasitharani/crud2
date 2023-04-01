@@ -13,6 +13,11 @@ class EmployeesController extends Controller
         $viewEmployee= emp::all();
         return view('add',compact('viewEmployee'));
     }
+    public function view2()
+    {
+        $viewEmployee= emp::all();
+        return view('add',compact('viewEmployee'));
+    }
 
    
     public function add(Request $request)
